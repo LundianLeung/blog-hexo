@@ -1,7 +1,7 @@
 #container{
 	width: auto;
 	height: auto;
-	background: url('../images/con_bg.jpg');
+	background: url('../images/con_bg.png');
 
 }	
 #resume{
@@ -32,41 +32,179 @@
 }
 #photo{
 	width: 240px;
-	height: 340px;
+	height: 300px;
+	padding-top: 40px;
 	background: #51B2FA;
 }
 
 #photo_img_cricle{           /* 圆形框 */
-	width: 120px;
-	height: 120px;
-	margin-top: 20px;
-	margin-left: 40px;
-	background: url('../images/photo_bg.png');
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	/* background: url('../images/photo_bg.jpg'); */
+	background: #FFFFFF;
 	background-repeat: no-repeat;
-	-moz-border-radius: 60px;
-	-webkit-border-radius: 60px;
-	border-radius: 60px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
 	
 }
 #photo_img{
 	width: 240px;
 	height: 180px;
+	margin: auto;
+}
+#photo_name{
+	margin: 100px;
+	height: 40px;
+	margin: auto;
+}
+#photo_name h3{
+	font:30px/60px '微软雅黑','黑体',sans-serif;
+	color:#FFFFFF;
+	display: block;
+	width:100px;
+	height:58px;
+	text-align: center;
+	margin: auto;
+}
+#photo_job{
+	width: 240px;
+	height: 50px;
+	padding-top: 60px;
+	background: url('../images/photo_job_bg.png');
+	background-repeat: no-repeat;
+	background-position: 20px;
+}
+#photo_job h3{
+	font:20px/0px '微软雅黑','黑体',sans-serif;
+	color:#51B2FA;
+	display: block;
+	text-align: center;
+	margin: auto;
 }
 #edu{
 	width: 240px;
-	height: 210px;
+	height: 185px;
 	background: #FFFFFF;
 }
 .l_subtitle{
 	width: 146px;
 	height: 42px;
-	background: red;
+	float: left;
+	margin: 35px 0 0 5px;
+	background: #51B2FA;
+}
+.l_subtitle h3{
+	font:20px/40px '微软雅黑','黑体',sans-serif;
+	color:#FFFFFF;
+	display: block;
+	width:100px;
+	height:58px;
+	text-align: center;
+	margin: auto;
+	/* 文字两边对齐 */
+	text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+}
+#edu_time{
+	width: 180px;
+	height: 30px;
+	float: left;
+	margin:20px 0 0 20px; 
+	background: url('../images/edu_bg.png');
+	background-repeat: no-repeat;
+
+}
+#edu h4{
+	font:18px/16px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	display: block;
+	margin-left: 15px;
+	text-align: left;
+}
+#edu_subject{
+	width: 180px;
+	height: 30px;
+	float: left;
+	margin: 0 0 0 20px;
+	background:#FFFFFF;
+}
+#edu_college{
+	width: 180px;
+	height: 25px;
+	float: left;
+	margin: 0 0 0 20px;
+	background: #FFFFFF;
+}
+#edu h5{
+	font:18px/16px '微软雅黑','黑体',sans-serif;
+	color: #51B2FA;
+	display: block;
+	margin-left: 15px;
+	text-align: left
 }
 #honor{
+	width: 240px;
+	height: 180px;
+	background: #FFFFFF;
 
 }
+.honor_list{
+	widows: 180px;
+	height: 25px;
+	float: left;
+	clear: both;
+	margin: 20px 0 0 20px;
+	background: url('../images/honor_bg.png');	
+	background-repeat: no-repeat;
+}
+.honor_list h3{
+	font:18px/5px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	display: block;
+	margin-left: 15px;
+	text-align: left;
+}
 #callme{
-
+	width: 240px;
+	height: 323px;
+	background: #FFFFFF;
+}
+#callme_phone{
+	width: 180px;
+	height: 25px;
+	float: left;
+	margin: 0 0 0 20px;
+	background: url('../images/callme_phone_bg.png');
+	background-repeat: no-repeat;
+}
+#callme_mail{
+	width: 180px;
+	height: 25px;
+	float: left;
+	margin: 0 0 0 20px;
+	background: url('../images/callme_mail_bg.png');
+	background-repeat: no-repeat;
+}
+#callme_tim{
+	width: 180px;
+	height: 25px;
+	float: left;
+	margin: 0 0 0 20px;
+	background: url('../images/callme_tim_bg.png');
+	background-repeat: no-repeat;
+}
+#callme_wechat{
+	width: 180px;
+	height: 25px;
+	float: left;
+	margin: 0 0 0 20px;
+	background: url('../images/callme_wechat_bg.png');
+	background-repeat: no-repeat;
 }
 #rside{
 
