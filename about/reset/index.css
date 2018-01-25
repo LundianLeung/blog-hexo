@@ -1,0 +1,81 @@
+#container{
+	width: auto;
+	height: auto;
+	background: url('../images/con_bg.jpg');
+
+}	
+#resume{
+	width: 730px;
+	height: 1040px;
+	margin: auto;
+	background: #FFFFFF;
+}
+#lside{
+	width: 240px;
+	height: 1040px;
+	background: #FFDDAA;
+}
+#top{
+	width: 240px;
+	height: 52px;
+	background: #FFFFFF;
+
+}
+#top h3{
+	font:30px/50px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	display: block;
+	width:100px;
+	height:58px;
+	text-align: center;
+	margin-left: 60px;
+}
+#photo{
+	width: 240px;
+	height: 340px;
+	background: #51B2FA;
+}
+
+#photo_img_cricle{           /* 圆形框 */
+	width: 120px;
+	height: 120px;
+	margin-top: 20px;
+	margin-left: 40px;
+	background: url('../images/photo_bg.png');
+	background-repeat: no-repeat;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	
+}
+#photo_img{
+	width: 240px;
+	height: 180px;
+}
+#edu{
+	width: 240px;
+	height: 210px;
+	background: #FFFFFF;
+}
+.l_subtitle{
+	width: 146px;
+	height: 42px;
+}
+#honor{
+
+}
+#callme{
+
+}
+#rside{
+
+}
+#experience{
+
+}
+#skill{
+
+}
+#personal{
+
+}
