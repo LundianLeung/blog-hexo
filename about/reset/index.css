@@ -1,7 +1,7 @@
 #container{
 	width: auto;
 	height: auto;
-	background: url('../images/con_bg.jpg');
+	background: url('../images/con_bg.png');
 
 }	
 #resume{
@@ -13,69 +13,258 @@
 #lside{
 	width: 240px;
 	height: 1040px;
-	background: #FFDDAA;
+	float: left;
+	background: #FFFFFF;
+    background:rgba(255,255,255,1);          /* 边框模糊效果 */
+    box-shadow:0 0 20px rgba(166,166,166,1);
 }
 #top{
 	width: 240px;
 	height: 52px;
-	background: #FFFFFF;
+	background: url('../images/top_bg.png');
+	background-size: 20px 20px;    /* 图片等比缩放 */
+	-moz-background-size: 20px 20px; /* 老版本的 Firefox */
+	background-position: 10px 25px;
+	background-repeat: no-repeat;
 
 }
-#top h3{
-	font:30px/50px '微软雅黑','黑体',sans-serif;
+#top h1{
+	font:20px/75px '微软雅黑','黑体',sans-serif;
 	color:#A6A6A6;
-	display: block;
 	width:100px;
 	height:58px;
-	text-align: center;
-	margin-left: 60px;
+	margin-left: 35px;
 }
 #photo{
 	width: 240px;
-	height: 340px;
+	height: 300px;
+	padding-top: 40px;
 	background: #51B2FA;
 }
 
 #photo_img_cricle{           /* 圆形框 */
-	width: 120px;
-	height: 120px;
-	margin-top: 20px;
-	margin-left: 40px;
+	width: 150px;
+	height: 150px;
+	margin: auto;
 	background: url('../images/photo_bg.png');
-	background-repeat: no-repeat;
-	-moz-border-radius: 60px;
-	-webkit-border-radius: 60px;
-	border-radius: 60px;
+	background-position: 17px -2px;
+	-moz-border-radius: 75px;
+	-webkit-border-radius: 75px;
+	border-radius: 75px;
 	
 }
 #photo_img{
 	width: 240px;
 	height: 180px;
 }
+#photo_name{
+	width: 240px;
+	height: 58px;
+	margin: auto;
+
+}
+#photo_name h2{
+	font:25px/80px '微软雅黑','黑体',sans-serif;
+	color:#FFFFFF;
+	width:100px;
+	height:58px;
+	margin: auto;
+	text-align: center;
+}
+#photo_job{
+    width: 240px;
+	height: 58px;
+	margin: auto;
+	background: url('../images/photo_job_bg.png');
+	background-repeat: no-repeat;
+	background-position: 50%;0
+
+}
+#photo_job h3{
+	font:25px/60px '微软雅黑','黑体',sans-serif;
+	color:#51B2FA;
+	width:240px;
+	height:58px;
+	/* margin-top: 30px; */
+	text-align: center;
+}
 #edu{
 	width: 240px;
-	height: 210px;
+	height: 160px;
 	background: #FFFFFF;
 }
 .l_subtitle{
 	width: 146px;
 	height: 42px;
+	margin-top: 20px;
+	background: #51B2FA;
+}
+.l_subtitle h1{
+    font:18px/45px '微软雅黑','黑体',sans-serif;
+	color:#FFFFFF;
+	width:146px;
+	height:40px;
+	text-align: center;
+	letter-spacing: 5px;    /* 字间距 */
+}
+#edu_tag{
+	width: 5px;
+	height: 17px;
+	margin: 15px 0 0 25px;
+	background: #51B2FA;
+}
+#edu h2{
+    font:16px/20px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	width:80px;
+	margin-left: 20px;
+}
+#edu h3{
+    font:17px/20px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	width:180px;
+	margin: 15px 0 15px 45px;
+}
+#edu a{
+    font:17px/20px '微软雅黑','黑体',sans-serif;
+	color:#51B2FA;
+	width:150px;
+	margin: 0 0 0 45px;	
 }
 #honor{
-
+	width: 240px;
+	height: 180px;
+	background: #FFFFFF;
+}
+.honor_tag{
+	width: 4px;
+	height: 4px;
+	margin: 15px 0 15px 25px;
+	background: #A6A6A6;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;	
+}
+.honor_tag h2{
+    font:17px/8px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	width:150px;
+	margin: 25px 0 15px 25px;	
 }
 #callme{
 
 }
-#rside{
-
+#callme_phone{
+	width: 30px;
+	height: 30px;
+	margin: 15px 0 0 20px;
+	background-image: url('../images/callme_phone_bg.png');
+	background-size: 20px 20px;    /* 图片等比缩放 */
+	-moz-background-size: 20px 20px; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
 }
-#experience{
-
+#callme_mail{
+	width: 30px;
+	height: 30px;
+	margin: 15px 0 0 20px;
+	background-image: url('../images/callme_mail_bg.png');
+	background-size: 20px 20px;    /* 图片等比缩放 */
+	-moz-background-size: 20px 20px; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
+}
+#callme_qq{
+	width: 30px;
+	height: 30px;
+	margin: 15px 0 0 20px;
+	background-image: url('../images/callme_qq_bg.png');
+	background-size: 20px 20px;    /* 图片等比缩放 */
+	-moz-background-size: 20px 20px; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
+}
+#callme_wechat{
+	width: 30px;
+	height: 30px;
+	margin: 15px 0 0 20px;
+	background-image: url('../images/callme_wechat_bg.png');
+	background-size: 20px 20px;    /* 图片等比缩放 */
+	-moz-background-size: 20px 20px; /* 老版本的 Firefox */
+	background-repeat: no-repeat;
+}
+#callme h2{
+    font:17px/23px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	width:150px;
+	margin-left: 28px;		
+}
+#rside{
+	width: 490px;
+	height: 1040px;
+	float: right;
+	background: #FFFFFF;
+	background:rgba(255,255,255,1);          /* 边框模糊效果 */
+    box-shadow:0 0 20px rgba(166,166,166,1);	
 }
 #skill{
+	width: 490px;
+	height: 400px;
+	background: #DDD;
+}
+.rside_tag{
+	width: 490px;
+	height: 60px;
+	background: #FFFFFF;
+}
+.rside_tag h1{
+	font:19px/45px '微软雅黑','黑体',sans-serif;
+	color:#51B2FA;
+	width:146px;
+	/* height:40px; */
+	margin: 15px 0 0 10px;
+	float: left;
+	text-align: center;
+	letter-spacing: 5px;    /* 字间距 */
+}
+.rside_tag_bg{
+	width: 60px;
+	height: 60px;
+	float: right;
+	margin-right: 40px; 
+	background: #FFF;
+    border-radius: 0 0 60px 60px;  
+    height: 30px;
+	background:rgba(244,244,244,1);          /* 边框模糊效果 */
+    box-shadow: 0 0 20px rgba(166,166,166,1);	
+}
+.rside_tag_line{
+	width: 355px;
+	height: 1px;
+	clear: both;
+	margin-left:35px;
+	background: #A6A6A6; 
+}
+#experience{
+	width: 490px;
+	height: 400px;
+	background: #AAA;
 
 }
 #personal{
-
+	width: 490px;
+	height: 240px;
+	background: #FFFFFF;
+}
+.personal_item{
+	width: 6px;
+	height: 6px;
+	margin: 25px 0 15px 40px;
+	background: #51B2FA;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;	
+}
+.personal_item h2{
+    font:18px/8px '微软雅黑','黑体',sans-serif;
+	color:#A6A6A6;
+	width:400px;
+	margin: 25px 0 15px 15px;
 }
