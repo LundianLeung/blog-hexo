@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="full-height">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bulma/0.4.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  
+  <title>Ubuntu使用Shadowsocks | LundyLeung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Ubuntu使用Shadowsocks有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装：  sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto  接着安">
+<meta name="keywords" content="Shadowsocks">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ubuntu使用Shadowsocks">
+<meta property="og:url" content="http://lundyleung.github.io/2018/01/27/ubuntu-shadowsocks/index.html">
+<meta property="og:site_name" content="LundyLeung">
+<meta property="og:description" content="Ubuntu使用Shadowsocks有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装：  sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto  接着安">
+<meta property="og:updated_time" content="2018-01-27T06:09:45.494Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ubuntu使用Shadowsocks">
+<meta name="twitter:description" content="Ubuntu使用Shadowsocks有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装：  sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto  接着安">
+  
+    <link rel="alternate" href="/atom.xml" title="LundyLeung" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/layout.css">
+  
+
+</head>
+
+<body>
+  <header id="navbar" class="overflow-hidden">
+  <div class="container">
+    <nav class="nav">
+         <div class="nav-left">
+            <a href="/" class="nav-item" style="font-size: 20px;">
+              <span class="logo">LundyLeung</span>'s Blog
+            </a>
+         </div>
+        <div class="nav-center is-hidden position-relative" id="search_container">
+            <div class="nav-item full-width full-height">
+                <i class="fa fa-search has-padding" aria-hidden="true"></i>
+                <input type="text" id="search_input" class="search-input full-height full-width" placeholder="Search post" autofocus>
+                <i id="close_search" class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div id="search_result"></div>
+        </div>
+        <div class="nav-right nav-menu">
+            <a class="nav-item" id="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </a>
+            
+            <a class="nav-item" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item" href="/about/index.html">
+                About
+            </a>
+            
+        </div>
+        <span class="nav-toggle" id="navMenuDropdown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+        <div class="navbar-menu position-absolute full-width content-box is-hidden-desktop is-flex flex-column center" style="top: 100%;">
+            
+            <a class="nav-item flex-1" href="/">
+                Home
+            </a>
+            
+            <a class="nav-item flex-1" href="/works">
+                My Works
+            </a>
+            
+            <a class="nav-item flex-1" href="/about/index.html">
+                About
+            </a>
+            
+        </div>
+    </nav>
+  </div>
+</header>
+
+  <div id="main-wrap" class="position-relative" style="margin-top: 55px;">
+      <div class="main-inner-content">
+          <!--博文页面-->
+
+<style>
+    .header-box {
+        height: 370px;
+        filter: blur(10px);
+        background-size: cover;
+        background-color: lightsteelblue;
+    }
+
+    .post-box {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 80vh;
+        margin-top: -200px;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.8);
+    }
+
+    .post-avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .flow-chart {
+        text-align: center;
+    }
+
+    img[alt="post-cover"] {
+        display: none;
+    }
+</style>
+<header>
+    <div id="header_box" class="header-box"></div>
+</header>
+<section>
+    <div class="container post-box">
+        <div class="content post-title is-flex center flex-column" style="margin-bottom: 70px; overflow: auto;">
+            <h1 class="has-text-centered" style="padding-bottom: 10px; border-bottom: 3px solid #fff">
+                <strong>Ubuntu使用Shadowsocks</strong>
+            </h1>
+            
+            <div class="is-flex align-center">
+                <img class="post-avatar" src="https://avatars2.githubusercontent.com/u/16079028?s=400&u=00bcec019fe5a8953345dc335339378eebc62781&v=4">
+                <span style="padding:0 10px;"> <span class="sub-title">By</span> LundyLeung</span>
+                <span class="post-date sub-title">at: 2018-01-27</span>
+            </div>
+            
+                <div>
+                    
+                         <a class="tag is-post-tag" href="/tags/Shadowsocks/">Shadowsocks</a>
+                    
+                </div>
+            
+        </div>
+        <div class="content" style="overflow: auto">
+            <h1 id="Ubuntu使用Shadowsocks"><a href="#Ubuntu使用Shadowsocks" class="headerlink" title="Ubuntu使用Shadowsocks"></a>Ubuntu使用Shadowsocks</h1><p>有两种方法：</p>
+<p>1.安装Shadowsocks命令行程序，配置命令。</p>
+<p>2.安装Shadowsocks GUI图形用户界面，配置。</p>
+<h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2><p>使用pip安装：</p>
+<blockquote>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install python-pip</p>
+<p>sudo apt-get install python-setuptools m2crypto</p>
+</blockquote>
+<p>接着安装Shadowsocks</p>
+<blockquote>
+<p>pip install shadowsocks</p>
+</blockquote>
+<p>如果是Ubuntu 16.04以后的版本（16.04里可以直接用apt而不用apt-get这一项改进）</p>
+<blockquote>
+<p>sudo apt install shadowsocks</p>
+</blockquote>
+<p>当然如果安装的时候提示有一些依赖也需要安装，依照提示安装就好了。</p>
+<h3 id="启动Shadowsocks"><a href="#启动Shadowsocks" class="headerlink" title="启动Shadowsocks"></a>启动Shadowsocks</h3><p>安装好之后，在本地我们要用到sslocal，终端输入：</p>
+<blockquote>
+<p>sslocal –help</p>
+</blockquote>
+<p>可以查看帮助，通过帮助的提示，我们可以知道各个参数是怎样配置的，或者像下面这样直接命令参数写上运行;</p>
+<blockquote>
+<p>sslocal -s 11.22.33.44 -p 50003 -k “123456” -l 1080 -t 600 -m aes-256-cfb</p>
+</blockquote>
+<p>-s表示IP，-p指的是服务端的端口，-l是本地端口默认1080,-k是密码（要加””），-t是超时，默认300,-m是加密方法，默认aes-256-cfb。（此方法关掉终端后便会失效）</p>
+<p>为了方便，推荐使用cclocal -c配置文件路径，这种方式简单好用。</p>
+<p>在我们的电脑上新建一个shadowsocks.json的文件(xx/xx是我们的文件路径)，具体内容如下：</p>
+<blockquote>
+<p>{</p>
+<p>​    “server”:”11.22.33.44”,            //服务器IP</p>
+<p>​    “server_port”:50003,               //服务端端口</p>
+<p>​    “local_port”:1080,                    //本地端口，默认1080</p>
+<p>​    “password”:”123456”,             //ss服务端设置的密码</p>
+<p>​    “timeout”:600,                          //超时设置</p>
+<p>​    “method”:aes-256-cfb             //加密方法</p>
+<p>}</p>
+</blockquote>
+<p>确定上面配置文件没有问题之后，然后在终端输入：</p>
+<blockquote>
+<p>sslocal -c /xx/xx/shadowsocks.json</p>
+</blockquote>
+<p>回车运行。</p>
+<p>连接好了之后去系统的代理设置里面按照说明设置代理，但一般都是全局的，所以我们最好配置我们的浏览器让他可以自动切换，该用代理的时候用代理，直接连接的时候自动直接连接。</p>
+<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><p>安装GUI图形用户界面程序，然后按照提示配置相应的参数。</p>
+<p>在Ubuntu上可以通过PPA源安装，仅支持Ubuntu14.04以上版本。</p>
+<blockquote>
+<p>sudo add-apt-repository ppa:hzwhuang/ss-qt5</p>
+<p>sudo apt-get update</p>
+<p>sudo apt-get install shadowsocks-qt5</p>
+</blockquote>
+<p>由于是图形界面，配置和windows基本没什么差别，这里就不赘述了。经过上面的配置，你只是启动了sslocal，但是要上网你还需要配置一下浏览器到指定的代理端口，比如1080才可以正式上网。</p>
+<h3 id="配置浏览器"><a href="#配置浏览器" class="headerlink" title="配置浏览器"></a>配置浏览器</h3><p>假如你上面任选一种方式已经开始运行sslocal了，火狐那个老是订阅不了gfwlist所以配置自动模式不好使。所以这里使用的是chrome，你可以在Ubuntu软件中心下载得到。</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>我们需要给chrome安装SwitchyOmega插件，但是没有代理之前是不能从谷歌商店下载这个插件的，但是我们可以从Github上下载最新版<a href="https://github.com/FelisCatus/SwitchyOmega/rel" target="_blank" rel="noopener">https://github.com/FelisCatus/SwitchyOmega/rel</a> 然后浏览器地址打开chrome://extensions/，将下载的插件托进去安装。</p>
+<h3 id="设置代理地址"><a href="#设置代理地址" class="headerlink" title="设置代理地址"></a>设置代理地址</h3><p>安装好插件会自动跳到设置选项，有提示你可以跳过，左边新建情景模式-选择代理服务器-比如命名为ss，其他，默认之后创建，之后在代理协议选择SOCKS5，地址为127.0.0.1，端口默认1080。然后保存应用选项。</p>
+<h3 id="设置自动切换"><a href="#设置自动切换" class="headerlink" title="设置自动切换"></a>设置自动切换</h3><p>接着点击自动切换（Auto switch）上面的不用管，在按照规则列表匹配请求后面选择刚才创建的ss，默认情景模式选择直接连接，点击应用保存；在往下规则列表设置选择AutoProxy，然后将<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank" rel="noopener">这个地址</a> 添加到里面，点击浏览器右上角的SwitchOmega图标，下面选择自动切换，然后打开google.com试试，其他的就不再赘述了。</p>
+<h6 id="注：像一些V-P-N服务商提供的都是线路名称（比如xx-xx-xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。"><a href="#注：像一些V-P-N服务商提供的都是线路名称（比如xx-xx-xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。" class="headerlink" title="注：像一些V-P-N服务商提供的都是线路名称（比如xx.xx.xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。"></a>注：像一些V-P-N服务商提供的都是线路名称（比如xx.xx.xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。</h6>
+        </div>
+        <div class="post-reply">
+            
+                <!-- 来必力City版安装代码 -->
+                <div id="lv-container" data-id="city" data-uid="MTAyMC8yOTE4Ni81NzUz">
+                    <script type="text/javascript">
+                        (function(d, s) {
+                            var j, e = d.getElementsByTagName(s)[0];
+
+                            if (typeof LivereTower === 'function') { return; }
+
+                            j = d.createElement(s);
+                            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                            j.async = true;
+
+                            e.parentNode.insertBefore(j, e);
+                        })(document, 'script');
+                    </script>
+                    <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+                </div>
+                <!-- City版安装代码已完成 -->
+            
+            
+        </div>
+    </div>
+</section>
+<script>
+    // 获取第一张图, 用以当封面背景图
+    var img = document.querySelectorAll('img')[1]
+
+    if (img) {
+        var header_box = document.querySelector('#header_box')
+        header_box.style.backgroundImage = 'url('+ img.src +')'
+    }
+</script>
+      </div>
+  </div>
+  <style>
+  #footer {
+    min-height: 10vh;
+    background: black;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #e1e1e1;
+  }
+</style>
+<footer id="footer" class="has-text-centered is-flex center">
+  <div class="container has-padding">
+    <div>
+      <div>
+        <!--请您保留作者署名, 主题制作来之不易-->
+        Theme by <a href="http://haojen.github.io/">Haojen Ma</a>
+        <br>
+        Copyright © Lundy 2018
+        <br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/search_core.js"></script>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
