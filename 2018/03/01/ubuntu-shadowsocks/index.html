@@ -12,10 +12,10 @@
 <meta name="keywords" content="Shadowsocks">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu使用Shadowsocks">
-<meta property="og:url" content="http://lundyleung.github.io/2018/01/27/ubuntu-shadowsocks/index.html">
+<meta property="og:url" content="http://lundyleung.github.io/2018/03/01/ubuntu-shadowsocks/index.html">
 <meta property="og:site_name" content="LundyLeung">
 <meta property="og:description" content="Ubuntu使用Shadowsocks有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装：  sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto  接着安">
-<meta property="og:updated_time" content="2018-01-27T06:09:45.494Z">
+<meta property="og:updated_time" content="2018-03-01T11:15:14.478Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu使用Shadowsocks">
 <meta name="twitter:description" content="Ubuntu使用Shadowsocks有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装：  sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto  接着安">
@@ -142,7 +142,7 @@
             <div class="is-flex align-center">
                 <img class="post-avatar" src="https://avatars2.githubusercontent.com/u/16079028?s=400&u=00bcec019fe5a8953345dc335339378eebc62781&v=4">
                 <span style="padding:0 10px;"> <span class="sub-title">By</span> LundyLeung</span>
-                <span class="post-date sub-title">at: 2018-01-27</span>
+                <span class="post-date sub-title">at: 2018-03-01</span>
             </div>
             
                 <div>
@@ -209,7 +209,7 @@
 <h3 id="配置浏览器"><a href="#配置浏览器" class="headerlink" title="配置浏览器"></a>配置浏览器</h3><p>假如你上面任选一种方式已经开始运行sslocal了，火狐那个老是订阅不了gfwlist所以配置自动模式不好使。所以这里使用的是chrome，你可以在Ubuntu软件中心下载得到。</p>
 <h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>我们需要给chrome安装SwitchyOmega插件，但是没有代理之前是不能从谷歌商店下载这个插件的，但是我们可以从Github上下载最新版<a href="https://github.com/FelisCatus/SwitchyOmega/rel" target="_blank" rel="noopener">https://github.com/FelisCatus/SwitchyOmega/rel</a> 然后浏览器地址打开chrome://extensions/，将下载的插件托进去安装。</p>
 <h3 id="设置代理地址"><a href="#设置代理地址" class="headerlink" title="设置代理地址"></a>设置代理地址</h3><p>安装好插件会自动跳到设置选项，有提示你可以跳过，左边新建情景模式-选择代理服务器-比如命名为ss，其他，默认之后创建，之后在代理协议选择SOCKS5，地址为127.0.0.1，端口默认1080。然后保存应用选项。</p>
-<h3 id="设置自动切换"><a href="#设置自动切换" class="headerlink" title="设置自动切换"></a>设置自动切换</h3><p>接着点击自动切换（Auto switch）上面的不用管，在按照规则列表匹配请求后面选择刚才创建的ss，默认情景模式选择直接连接，点击应用保存；在往下规则列表设置选择AutoProxy，然后将<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank" rel="noopener">这个地址</a> 添加到里面，点击浏览器右上角的SwitchOmega图标，下面选择自动切换，然后打开google.com试试，其他的就不再赘述了。</p>
+<h3 id="设置自动切换"><a href="#设置自动切换" class="headerlink" title="设置自动切换"></a>设置自动切换</h3><p>接着点击自动切换（Auto switch）上面的不用管，在按照规则列表匹配请求后面选择刚才创建的ss，默认情景模式选择直接连接，点击应用保存；在往下规则列表设置选择AutoProxy，然后将<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank" rel="noopener">这个地址</a> （是地址不是地址里面的内容）添加到里面，点击浏览器右上角的SwitchOmega图标，下面选择自动切换，然后打开google.com试试，其他的就不再赘述了。</p>
 <h6 id="注：像一些V-P-N服务商提供的都是线路名称（比如xx-xx-xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。"><a href="#注：像一些V-P-N服务商提供的都是线路名称（比如xx-xx-xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。" class="headerlink" title="注：像一些V-P-N服务商提供的都是线路名称（比如xx.xx.xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。"></a>注：像一些V-P-N服务商提供的都是线路名称（比如xx.xx.xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。</h6>
         </div>
         <div class="post-reply">
