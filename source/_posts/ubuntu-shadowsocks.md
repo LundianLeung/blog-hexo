@@ -6,7 +6,7 @@ tag: Shadowsocks
 
 
 
-
+![post-cover](/home/lundyleung/Pictures/Google.png)
 
 # Ubuntu使用Shadowsocks
 
