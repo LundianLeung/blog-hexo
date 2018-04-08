@@ -80,4 +80,4 @@ deploy:
   - type: git 
     repo: https://github.com/lundyleung/lundyleung.github.io.git,master
   - type: git
-    repo: https://git.coding.net/LundyLeung/lundyleung.git,master
+    repo: git@git.coding.net:LundyLeung/lundyleung.git,master
