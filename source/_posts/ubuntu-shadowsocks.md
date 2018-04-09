@@ -1,10 +1,8 @@
 ---
 title: Ubuntu使用Shadowsocks
 data: 2018-1-22 13:21:15
-tag: Shadowsocks
+tags: "Shadowsocks"
 ---
-
-![post-cover](/home/lundyleung/Documents/lundyleung.github.io/source/_posts/google.png)
 
 有两种方法：
 
