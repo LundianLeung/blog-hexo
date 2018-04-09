@@ -6,9 +6,9 @@ tag: Shadowsocks
 
 
 
-![post-cover](/home/lundyleung/Pictures/Google.png)
-
 # Ubuntu使用Shadowsocks
+
+![post-cover](/home/lundyleung/Documents/lundyleung.github.io/source/_posts/google.png)
 
 有两种方法：
 
