@@ -4,13 +4,7 @@ data: 2018-04-09 12:02:34
 tag: grub
 ---
 
-
-
-
-
-# 开机出现`gurb rescue`解决办法
-
-最近发现了一个Android-X86的RemixOS的系统，于是就想下载下来装着玩玩，结果装完开机就出现
+​	最近发现了一个Android-X86的RemixOS的系统，于是就想下载下来装着玩玩，结果装完开机就出现
 
 > grub rescue>
 

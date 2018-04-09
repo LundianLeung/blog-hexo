@@ -4,9 +4,9 @@ date: 2018-01-23 17:25:34
 tag: Firefox
 ---
 
-# Ubuntu 17.10 手动安装Firefox
 
-首先是去[Firefox官网](https://www.mozilla.org/zh-CN/firefox/new/)下载Firefox的Linux平台包，找到最新的Linux版本，下载后得到Firefox-xx.tar.bz2，然后解压到本地。
+
+​	首先是去[Firefox官网](https://www.mozilla.org/zh-CN/firefox/new/)下载Firefox的Linux平台包，找到最新的Linux版本，下载后得到Firefox-xx.tar.bz2，然后解压到本地。
 
 > tar -xvf Firefox-xx.tar.bz2
 
