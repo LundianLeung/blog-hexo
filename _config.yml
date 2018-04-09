@@ -6,13 +6,13 @@
 title: LundyLeung
 subtitle:
 description:
-author: LundyLeung
-language: default
+author: Lundy
+language: 
 timezone: 
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://ld-leung.cc
+url: http://lundyleung.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Hexo-theme-Claudia
+theme: theme-next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,4 +80,4 @@ deploy:
   - type: git 
     repo: https://github.com/lundyleung/lundyleung.github.io.git,master
   - type: git
-    repo: git@git.coding.net:LundyLeung/lundyleung.git,master
+    repo: https://git.coding.net/LundyLeung/lundyleung.git,master
