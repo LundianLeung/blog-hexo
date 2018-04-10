@@ -6,7 +6,7 @@ tags: "Shadowsocks"
 
 
 
-![google](/source/_posts/google.png)
+![post-cover](./google.png)
 
 有两种方法：
 
