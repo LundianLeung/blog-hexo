@@ -4,6 +4,10 @@ data: 2018-1-22 13:21:15
 tags: "Shadowsocks"
 ---
 
+
+
+![google](/source/_posts/google.png)
+
 有两种方法：
 
 1.安装Shadowsocks命令行程序，配置命令。
