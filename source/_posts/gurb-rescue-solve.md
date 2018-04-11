@@ -2,6 +2,7 @@
 title: 开机出现grub rescue解决办法
 data: 2018-04-09 12:02:34
 tags: "grub"
+categories: "电脑系统"
 ---
 
 ​	最近发现了一个Android-X86的RemixOS的系统，于是就想下载下来装着玩玩，结果装完开机就出现

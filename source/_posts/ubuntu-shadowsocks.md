@@ -2,6 +2,7 @@
 title: Ubuntu使用Shadowsocks
 data: 2018-1-22 13:21:15
 tags: "Shadowsocks"
+categories: "工具软件使用"
 ---
 
 

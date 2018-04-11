@@ -2,6 +2,7 @@
 title: Ubuntu17.10手动安装Firefox
 date: 2018-01-23 17:25:34
 tags: "Firefox"
+categories: "工具软件使用"
 ---
 
 

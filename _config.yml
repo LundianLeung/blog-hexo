@@ -82,3 +82,10 @@ deploy:
     repo: https://github.com/lundyleung/lundyleung.github.io.git,master
   - type: git
     repo: https://git.coding.net/LundyLeung/lundyleung.git,master
+
+# Search
+search: 
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
