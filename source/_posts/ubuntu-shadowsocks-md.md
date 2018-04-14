@@ -7,7 +7,7 @@ categories: "工具软件使用"
 
 
 
-![post-cover](./google.png)
+![google](./ubuntu-shadowsocks-md/google.png)
 
 有两种方法：
 
