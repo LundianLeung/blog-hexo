@@ -30,3 +30,4 @@ tags: "技术"
 
 - [基于 Hexo 的全自动博客构建部署系](http://kchen.cc/2016/11/12/hexo-instructions/)：入门级Hexo博客搭建教程，文章中如果有些配置信息不理解可去作者github仓库查看源码。
 - [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)：比较详细的Travis CI使用介绍。
+- [hexo博客图片问题](https://www.jianshu.com/p/c2ba9533088a)：解决如何在Hexo博客文章中使用本地图片。

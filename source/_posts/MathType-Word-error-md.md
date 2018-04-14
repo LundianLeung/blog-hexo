@@ -17,9 +17,7 @@ categories: "工具软件使用"
 
 ![1523087007662](./MathType-Word-error-md/1523087007662.png)
 
-![1523087041844](./MathType-Word-error-md/1523087133650.png)
-
-![1523087041844](./MathType-Word-error-md/1523087041844.png)
+![523087041844](./MathType-Word-error-md/1523087041844.png)
 
 ![523087133650](./MathType-Word-error-md/1523087133650.png)
 
