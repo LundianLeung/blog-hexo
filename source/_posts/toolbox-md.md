@@ -1,7 +1,9 @@
-
+---
+title: 我的常用软件
 date: 2018-04-15 09:37:35
 tags: "工具"
 categories: "工具软件的使用"
+---
 
 ## Windows平台
 
@@ -14,6 +16,16 @@ categories: "工具软件的使用"
 - [Uninstall tool](https://www.crystalidea.com/uninstall-tool)：一款强大的卸载软件，不过需要付费购买。
 
   ![uninstall-tool](./toolbox-md/uninstall-tool.png)
+
+- [Shadowsocks](https://shadowsocks.org/en/index.html) : 科学上网神器，需要浏览器配合SwitchyOmega插件使用。
+
+
+
+
+
+## Linux平台
+
+
 
 ## Linux平台
 
