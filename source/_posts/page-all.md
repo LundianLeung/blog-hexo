@@ -5,14 +5,14 @@ tags: "技术"
 ---
 
 
-## 1.工具类文章汇总
+## 工具类文章汇总
 
 - [一个前端程序猿的Sublime Text3的自我修养](http://blog.guowenfh.com/2015/12/26/SublimeText/) ：介绍Sublime Tsext3及其用于前端开发所常用的插件，以及一些便捷操作。
 - [Ubuntu 下安装oh-my-zsh](https://www.jianshu.com/p/9a5c4cb0452d)：终端工具oh my zsh安装教程。比Ubuntu自带的终端好用的不只一点点啊！！
 
 
 
-## 2.操作系统类文章汇总
+## 操作系统类文章汇总
 
 ### Ubuntu
 
@@ -26,7 +26,7 @@ tags: "技术"
 
 
 
-## 3.博客文章汇总
+## 博客文章汇总
 
 - [基于 Hexo 的全自动博客构建部署系](http://kchen.cc/2016/11/12/hexo-instructions/)：入门级Hexo博客搭建教程，文章中如果有些配置信息不理解可去作者github仓库查看源码。
 - [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)：比较详细的Travis CI使用介绍。
