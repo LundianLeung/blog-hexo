@@ -28,9 +28,10 @@ categories: "软件与资源"
 ## Android平台
 
 - [LineageOS](https://www.lineageos.org/)：LineageOS是基于Android移动平台的智能手机和平板电脑的免费开源操作系统。最近原生的Android操作系统。
-- [GApps](opengapps.org)：国内用户使用google服务的必备工具，不过官网下载速度太慢。
+- [GApps](https://opengapps.org)：国内用户使用google服务的必备工具，不过官网下载速度太慢。
 - [黑阈](https://play.google.com/store/apps/details?id=me.piebridge.brevent&hl=zh)：不需要 Root 就能待机（App Standby，Android 6.0 引入，部分设备不支持）或强行停止应用，防止应用持续运行。
 - [Xposed](http://repo.xposed.info/module/de.robv.android.xposed.installer)：Xposed是一个模块框架，可以在不触摸任何APK的情况下更改系统和应用程序的行为。
 - 强力检测：可以检测CPU，内存，电池的信息，还可以清理内存，UI也很好看。（可以在酷安或各大应用商店下载）
-- [电影雷达](47.95.6.216)：看片神器，可以免费查看各种影片资源。应用商店无法找到此应用，因为此应用已被各大应用商店封杀。可以在这个链接里面找到该应用，此链接是作者给的。
+- [电影雷达](http://47.95.6.216)：看片神器，可以免费查看各种影片资源。应用商店无法找到此应用，因为此应用已被各大应用商店封杀。可以在这个链接里面找到该应用，此链接是作者给的。
+- [绿色运行](https://www.coolapk.com/apk/com.green.running)：绿色运行是阻止运行的升级版本，增加了游戏模式，保证了应用只在使用时才会被启动，后退关闭应用后直接销毁应用进程，远离全家桶，远离后台驻留。需要启用Xposed。
 
