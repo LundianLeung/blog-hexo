@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Ubuntu使用Shadowsocks]]></title>
+    <url>%2F2018%2F09%2F20%2Fubuntu-shadowsocks-md%2F</url>
+    <content type="text"><![CDATA[有两种方法： 1.安装Shadowsocks命令行程序，配置命令。 2.安装Shadowsocks GUI图形用户界面，配置。 第一种使用pip安装： sudo apt-get update sudo apt-get install python-pip sudo apt-get install python-setuptools m2crypto 接着安装Shadowsocks pip install shadowsocks 如果是Ubuntu 16.04以后的版本（16.04里可以直接用apt而不用apt-get这一项改进） sudo apt install shadowsocks 当然如果安装的时候提示有一些依赖也需要安装，依照提示安装就好了。 启动Shadowsocks安装好之后，在本地我们要用到sslocal，终端输入： sslocal –help 可以查看帮助，通过帮助的提示，我们可以知道各个参数是怎样配置的，或者像下面这样直接命令参数写上运行; sslocal -s 11.22.33.44 -p 50003 -k “123456” -l 1080 -t 600 -m aes-256-cfb -s表示IP，-p指的是服务端的端口，-l是本地端口默认1080,-k是密码（要加””），-t是超时，默认300,-m是加密方法，默认aes-256-cfb。（此方法关掉终端后便会失效） 为了方便，推荐使用cclocal -c配置文件路径，这种方式简单好用。 在我们的电脑上新建一个shadowsocks.json的文件(xx/xx是我们的文件路径)，具体内容如下： { ​ “server”:”11.22.33.44”, //服务器IP ​ “server_port”:50003, //服务端端口 ​ “local_port”:1080, //本地端口，默认1080 ​ “password”:”123456”, //ss服务端设置的密码 ​ “timeout”:600, //超时设置 ​ “method”:aes-256-cfb //加密方法 } 确定上面配置文件没有问题之后，然后在终端输入： sslocal -c /xx/xx/shadowsocks.json 回车运行。 连接好了之后去系统的代理设置里面按照说明设置代理，但一般都是全局的，所以我们最好配置我们的浏览器让他可以自动切换，该用代理的时候用代理，直接连接的时候自动直接连接。 第二种安装GUI图形用户界面程序，然后按照提示配置相应的参数。 在Ubuntu上可以通过PPA源安装，仅支持Ubuntu14.04以上版本。 sudo add-apt-repository ppa:hzwhuang/ss-qt5 sudo apt-get update sudo apt-get install shadowsocks-qt5 由于是图形界面，配置和windows基本没什么差别，这里就不赘述了。经过上面的配置，你只是启动了sslocal，但是要上网你还需要配置一下浏览器到指定的代理端口，比如1080才可以正式上网。 配置浏览器假如你上面任选一种方式已经开始运行sslocal了，火狐那个老是订阅不了gfwlist所以配置自动模式不好使。所以这里使用的是chrome，你可以在Ubuntu软件中心下载得到。 安装插件我们需要给chrome安装SwitchyOmega插件，但是没有代理之前是不能从谷歌商店下载这个插件的，但是我们可以从Github上下载最新版https://github.com/FelisCatus/SwitchyOmega/rel 然后浏览器地址打开chrome://extensions/，将下载的插件托进去安装。 设置代理地址安装好插件会自动跳到设置选项，有提示你可以跳过，左边新建情景模式-选择代理服务器-比如命名为ss，其他，默认之后创建，之后在代理协议选择SOCKS5，地址为127.0.0.1，端口默认1080。然后保存应用选项。 设置自动切换接着点击自动切换（Auto switch）上面的不用管，在按照规则列表匹配请求后面选择刚才创建的ss，默认情景模式选择直接连接，点击应用保存；在往下规则列表设置选择AutoProxy，然后将这个地址 （是地址不是地址里面的内容）添加到里面，点击浏览器右上角的SwitchOmega图标，下面选择自动切换，然后打开google.com试试，其他的就不再赘述了。 注：像一些V-P-N服务商提供的都是线路名称（比如xx.xx.xx这样）没有直接给出IP地址，拿他们提供的线路去ping一下就可以得出IP地址了。]]></content>
+      <categories>
+        <category>工具软件使用</category>
+      </categories>
+      <tags>
+        <tag>Shadowsocks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows上Git Bash配置]]></title>
+    <url>%2F2018%2F09%2F20%2Fgitbash-win%2F</url>
+    <content type="text"><![CDATA[首先正确安装Git，完成安装后，可以根据自己的喜好自定义Gitbush的外观（左键单击Gitbush左上角选择Options…进行选择），然后下载配置Git所必须的文件，本文后面附带百度网盘链接下载，然后启动Git Bush进行配置： 第一步：将下载的文件移动到主目录中，命令行如下： cd ~mv xxxxx/git-completion.bash.txt git-completion.bashmv xxxxx/git-prompt.sh.txt git-prompt.shmv xxxxx/bash_profile_course .bash_profile// xxxxx代表下载的文件所在的目录 第二步：配置Git编辑器，命令行如下： git config –global core.editor “‘xx/xxx/sublime_text.exe’ -n -w”git config –global push.default upstreamgit config –global merge.conflictstyle diff3git config –global user.name “xxx”git config –global user.email “xxx@gmail.com“ 至次你的Git就已配置完毕。 git bash文件下载连接：链接：https://pan.baidu.com/s/1XZsYCr_ovBVyCZ3tWhwD9g 密码：fphz]]></content>
+      <categories>
+        <category>工具软件使用</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[开机出现grub rescue解决办法]]></title>
+    <url>%2F2018%2F09%2F20%2Fgurb-rescue-solve%2F</url>
+    <content type="text"><![CDATA[​ 最近发现了一个Android-X86的RemixOS的系统，于是就想下载下来装着玩玩，结果装完开机就出现 grub rescue&gt; 出现这种情况一般是由于磁盘分区导致grub引导文件找不到了，因此只要我们让它找到引导文件即可。 首先我们先输入 grub rescue&gt; set 查看现在的grub引导指向那个盘， 12prefix=(hd0,msdos5)/boot/grubroot=hd0,msdos5 表明现在grub指向的是第一块磁盘的第7块分区，引导文件不再此分区。然后使用ls命令查看磁盘的分区情况， grub rescue&gt; ls 1(hd0) (hd0,msdos5) (hd0,msdos4) (hd0,msdos3) (hd0,msdos2) (hd0,msdos1) (hd0,msdos0) (hd0,msdos6) (hd1) 接下来我们就要找到引导文件所在的分区，使用 ls (hd0,msdos5)/ 一个一个尝试，如果出现了grub字样，则说明引导文件就在此分区。我的引导文件恰巧就在（hd0，msdos5）分区。 找到分区之后使用 set root =hd0,msdos5 prefix=(hd0,msdos5)/boot/grub 将引导程序指向此分区，使用set 查看是否设置成功，然后在依次输入 insmod normal normal 电脑重启进入启动界面，然而并没有完，如果你再关机，下次启动是还会出现grub rescue。 所以还需要进入你的Linux系统，在终端下输入 sudo update-grub sudo grub-install /dev/sda sda表示你的第一块磁盘 如果使用/dev/sda报错的话，那么请使用 ls /dev/sd* 查看你的硬盘使用情况，选择一个正确的磁盘和分区。]]></content>
+      <categories>
+        <category>电脑系统</category>
+      </categories>
+      <tags>
+        <tag>grub</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[文章汇总]]></title>
+    <url>%2F2018%2F09%2F20%2Fpage-all%2F</url>
+    <content type="text"><![CDATA[工具类文章汇总 一个前端程序猿的Sublime Text3的自我修养 ：介绍Sublime Tsext3及其用于前端开发所常用的插件，以及一些便捷操作。 Ubuntu 下安装oh-my-zsh：终端工具oh my zsh安装教程。比Ubuntu自带的终端好用的不只一点点啊！！ 操作系统类文章汇总Ubuntu 最新版Ubuntu 17.10与Windows双系统安装、配置与美化教程：主要介绍了Win+Ubuntu双系统的安装及常用软件的安装。 Ubuntu美化之工具篇(一)：Ubuntu安装完成后基本软件的安装。 Ubuntu桌面美化教程 让你的 Ubuntu 看起来像 Mac （只需要五步）：Gnome桌面美化。 Ubuntu美化之主题篇(二)：Unity桌面美化。 博客文章汇总 基于 Hexo 的全自动博客构建部署系：入门级Hexo博客搭建教程，文章中如果有些配置信息不理解可去作者github仓库查看源码。 持续集成服务 Travis CI 教程：比较详细的Travis CI使用介绍。 hexo博客图片问题：解决如何在Hexo博客文章中使用本地图片。]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的常用软件]]></title>
+    <url>%2F2018%2F04%2F15%2Ftoolbox-md%2F</url>
+    <content type="text"><![CDATA[Windows平台 迅雷极速版：无广告，不限速，不过已经从官网下架，如果需要可以从我的百度云下载https://pan.baidu.com/s/1xf5pUrVErmWX_VJyxI6RUQ 密码：d4ox Dism++：一款强大的Windows清理工具，而且内置了各种优化工具，如果忍受不了XX全家桶可以试试这个。 Uninstall tool：一款强大的卸载软件，不过需要付费购买。 Shadowsocks : 科学上网神器，需要浏览器配合SwitchyOmega插件使用。 WebTorrent：可以在线播放种子文件的神器，与迅雷看看相似，但这个软件是全平台应用，Windows，MAC，Linux都可以。 Linux平台 Typora：简洁高效的Markown编辑器，可以跨平台使用。 Sublime Text：编辑器，这个就不多介绍了，程序员应该都知道吧。 WebStorm：专为前端开发而生的IDE，用过就知道它的强大了。不过需付费，如果你是学生的话可以申请他们免费的学生版（功能与付费版的相同）。 Android平台 LineageOS：LineageOS是基于Android移动平台的智能手机和平板电脑的免费开源操作系统。最近原生的Android操作系统。 GApps：国内用户使用google服务的必备工具，不过官网下载速度太慢。 黑阈：不需要 Root 就能待机（App Standby，Android 6.0 引入，部分设备不支持）或强行停止应用，防止应用持续运行。 Xposed：Xposed是一个模块框架，可以在不触摸任何APK的情况下更改系统和应用程序的行为。 强力检测：可以检测CPU，内存，电池的信息，还可以清理内存，UI也很好看。（可以在酷安或各大应用商店下载） 电影雷达：看片神器，可以免费查看各种影片资源。应用商店无法找到此应用，因为此应用已被各大应用商店封杀。可以在这个链接里面找到该应用，此链接是作者给的。 绿色运行：绿色运行是阻止运行的升级版本，增加了游戏模式，保证了应用只在使用时才会被启动，后退关闭应用后直接销毁应用进程，远离全家桶，远离后台驻留。需要启用Xposed。]]></content>
+      <categories>
+        <category>软件与资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu17.10手动安装Firefox]]></title>
+    <url>%2F2018%2F01%2F23%2Fubuntu-setup-firefox%2F</url>
+    <content type="text"><![CDATA[​ 首先是去Firefox官网下载Firefox的Linux平台包，找到最新的Linux版本，下载后得到Firefox-xx.tar.bz2，然后解压到本地。 tar -xvf Firefox-xx.tar.bz2 得到一个Firefox文件夹。然后更改一下用户的执行权限， cd firefox sudo chmod 755 * 为了便于管理（当然根据个人的习惯），将此文件夹移到/opt文件夹下面， sudo mv firefox /opt 此时你若直接运行文件夹中的firefox的话， 弹出的仍然是旧版本的Firefox，所以为了方便使用，还需要更改一下/usr/bin/firefox的指向，先备份该文件， sudo mv /usr/bin/firefox /usr/bin/firefox-old 然后创建新文件： sudo ln -s /opt/firefox/firefox /usr/bin/firefox 执行成功后，注销一下，重新登录后，就尽情享用Firefox了。]]></content>
+      <categories>
+        <category>工具软件使用</category>
+      </categories>
+      <tags>
+        <tag>Firefox</tag>
+      </tags>
+  </entry>
+</search>
